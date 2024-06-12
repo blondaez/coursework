@@ -1,0 +1,4 @@
+Django>=3.0
+unicorn
+dj-database-url
+psycopg2-binary
