@@ -1,1 +1,1 @@
-web: gunicorn beautyspace.wsgi
+web: gunicorn beautyspace.wsgi --log-file -
