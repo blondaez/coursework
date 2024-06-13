@@ -76,8 +76,9 @@ WSGI_APPLICATION = 'beautyspace.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
+import dj_database_url
 DATABASES = {
-    'default': dj_database_url.config(default=os.getenv('DATABASE_URL'))
+    'default': dj_database_url.config(default='postgres://user:password@hostname:port/dbname')
 }
 
 # Password validation
